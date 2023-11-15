@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <!-- Titulo -->
+  <title>Mi perfil - [psicologo]</title>
+  <link rel="icon" href="../FISIMentalSync-FrontEnd-MPA/images/logoFisi.ico" />
+  <!-- Metadatos -->
+  <meta charset="utf-8">
+  <meta name="description" content="Perfil de psicologo" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <!-- CSS -->
+  <link rel="stylesheet" href="../css/App.css" />
+  <link rel="stylesheet" href="../css/barra-navegacion.css" />
+  <link rel="stylesheet" href="../css/perfil.css" />
+  <!-- Fuentes -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <!-- Iconos -->
+  <script src="https://kit.fontawesome.com/9e15f108bc.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <div id="App">
+    <main class="perfil">
+      <h1 id="bienvenida">¡Bienvenido(a) Nombre Apellido!</h1>
+      <h2>Mi información personal</h2>
+      <section class="contenedor-info">
+        <p class="texto-etiqueta">Celular</p>
+        <p class="texto-info" id = 'Celular'>912344873</p>
+        <p class="texto-etiqueta">Correo</p>
+        <p class="texto-info" style="grid-column-start: 2;
+        grid-column-end: 5;" id = 'Correo' >micorreo@gmail.com</p>
+      </section>
+      <h2>Calendario de citas</h2>
+      <table class="tabla-citas">
+        <thead>
+          <tr class="encabezado-tabla-citas">
+            <th>N°</th>
+            <th>Horario</th>
+            <th>Psicólogo</th>
+            <th>Asistencia</th>
+            <th>Impresión diagnóstica</th>
+            <th>Satisfacción</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="contenido-tabla-citas">
+            <td>1</td>
+            <td><a href="#" class="boton-ver" id="boton-ver">
+                <p>Ver</p>
+              </a></td>
+            <td>Nombre de psicólogo</td>
+            <td>Pendiente</td>
+            <td>Pendiente</td>
+            <td>0/5</td>
+          </tr>
+          <tr class="contenido-tabla-citas">
+            <td>1</td>
+            <td><a href="#" class="boton-ver" id="boton-ver">
+                <p>Ver</p>
+              </a></td>
+            <td>Nombre de psicólogo</td>
+            <td>Pendiente</td>
+            <td>Pendiente</td>
+            <td>0/5</td>
+          </tr>
+          <tr class="contenido-tabla-citas">
+            <td>1</td>
+            <td><a href="#" class="boton-ver" id="boton-ver">
+                <p>Ver</p>
+              </a></td>
+            <td>Nombre de psicólogo</td>
+            <td>Pendiente</td>
+            <td>Pendiente</td>
+            <td>0/5</td>
+          </tr>       
+        </tbody>
+      </table>
+    </main>
+  </div>
+  <div class="fondoPopup" id="fondoPopup">
+    <div class="popup" id="popup">
+      <a href="#" id="btn-cerrar-popup" class="btn-cerrar-popup"><i class="fas fa-times"></i></a>
+      <table class="tabla-citas">
+        <thead>
+          <tr class="encabezado-tabla-citas">
+            <th>Mes</th>
+            <th>Fecha</th>
+            <th>Hora</th>
+        </thead>
+        <tbody>
+          <tr class="encabezado-tabla-citas">
+            <td>Agosto</td>
+            <td>12/08/2021</td>
+            <td>10:00</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+  <script type="module" src="../js/App-psicologo.js"></script>
+  <script type="module" src="../../FISIMentalSync-BackEnd/MiPerfilPsicologo.js"></script>
+
+  <!-- Esto puede ser eliminado -->
+<!--   <script language="JavaScript">
+    document.addEventListener("DOMContentLoaded", function() {
+      const perfilLi = document.querySelector('.contenedor-listas-nav li:nth-child(1)');
+      perfilLi.classList.add('activo');
+    });
+  </script> -->
+</body>
+
+</html>

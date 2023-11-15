@@ -1,0 +1,78 @@
+@import './colors.css';
+
+#buscar-form{
+  margin: 20px 0px;
+  padding: 1rem 2rem;
+  padding: 1rem;
+  border: 2px solid var(--neutral-300);
+  border-radius: 10px;
+  display: grid;
+  grid-template-columns: auto 85%;
+  gap: 1rem;
+}
+
+#buscar-form > input{
+  border: 0.5px solid var(--neutral-50);
+  padding: 0.5rem 1rem;
+  border-radius: 15px;
+}
+
+#buscar-form > label {
+  font-weight: bold;
+  margin: auto 0;
+}
+
+#boton-buscar-alumnos{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  grid-column: span 2;
+}
+
+#boton-buscar-alumnos > button{
+  background-color: #8069df;
+  color: white;
+  cursor: pointer;
+  padding: 0.6rem 0;
+  font-weight: bold;
+  font-size: clamp(0.5rem, 2vw, 1rem);
+  border: none;
+  border-radius: 15px;
+  width: 50%;
+}
+
+.tabla-alumnos{
+  background-color: var(--neutral-50);
+  border-radius: 8px;
+  color: var(--white-50);
+  padding: 0 1rem 1rem 1rem;
+  width: 100%;
+}
+
+.encabezado-tabla-alumnos{
+  color: var(--secondary1-200);
+  text-align: center;
+  height: 4rem;
+}
+
+th {
+  border-bottom: 2px solid var(--secondary1-300); 
+}
+
+.contenido-tabla-alumnos{
+  text-align: center;
+  height: 4rem;
+}
+
+td:last-child{
+  border-right: 2px solid var(--secondary1-300);
+}
+
+
+#buscar{
+  padding: 0.5rem 1rem;
+  border-radius: 15px;
+  background-color: var(--secondary1-00);
+  border: 0.5px solid var(--neutral-50);
+  grid-template-columns: auto 85%;
+}

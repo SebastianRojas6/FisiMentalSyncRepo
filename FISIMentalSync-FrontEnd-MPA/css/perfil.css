@@ -1,0 +1,142 @@
+@import './colors.css';
+
+.perfil{
+  display: grid;
+  gap: 1rem;
+}
+
+h1{
+  font-size: 2.5rem;
+}
+
+h2{
+  background-color: var(--secondary1-200);
+  color: var(--neutral-100);
+  border-radius: 15px;
+  padding: 0.5rem 2rem;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+}
+
+.contenedor-info{
+  display: grid;
+  gap: 0.5rem;
+  grid-template-columns: auto auto auto auto;
+}
+
+.texto-etiqueta{
+  background-color: var(--neutral-500);
+  color: var(--secondary1-50);
+  font-size: clamp(0.8rem,1.5vw,1.2rem);
+  border-radius: 8px;
+  padding: 1rem;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.texto-info{
+  background-color: var(--secondary1-100);
+  color: var(--neutral-100);
+  font-size: clamp(0.8rem,1.5vw,1.2rem);
+  border-radius: 8px;
+  padding: 1rem;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.texto-info:nth-child(2)  {
+  grid-column-start: 2;
+  grid-column-end: 5;
+}
+
+.link-pop-up{
+  background-color: #FBB958;
+  color: var(--neutral-100);
+  border-radius: 8px;
+  padding: 1rem;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.tabla-citas{
+  background-color: var(--neutral-50);
+  border-radius: 8px;
+  color: var(--white-50);
+  padding: 0 1rem 1rem 1rem;
+}
+
+.encabezado-tabla-citas{
+  color: var(--secondary1-200);
+  text-align: center;
+  height: 4rem;
+}
+
+th {
+  border-bottom: 2px solid var(--secondary1-300); 
+}
+
+.contenido-tabla-citas{
+  text-align: center;
+  height: 4rem;
+}
+
+td:last-child{
+  border-right: 2px solid var(--secondary1-300);
+}
+
+td > a {
+  color: var(--white-50);
+}
+
+.fondoPopup{
+  background-color: rgba(0,0,0,0.5);
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  visibility: hidden;
+}
+
+.fondoPopup.active{
+  visibility: visible;
+}
+
+.popup {
+	background: #F8F8F8;
+	box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.3);
+	border-radius: 3px;
+	padding: 20px;
+	text-align: center;
+  box-sizing: border-box;
+	opacity: 100;
+}
+
+.popup form .contenedor-inputs {
+	opacity: 100;
+}
+
+.popup form .contenedor-inputs input {
+	width: 100%;
+	margin-bottom: 20px;
+	height: 52px;
+	font-size: 18px;
+	line-height: 52px;
+	text-align: center;
+	border: 1px solid #BBBBBB;
+}
+
+.popup.active {	transform: scale(1); opacity: 1; }
+
+.boton-ver:hover{
+  color: rgba(255, 255, 255, 0.477);
+}

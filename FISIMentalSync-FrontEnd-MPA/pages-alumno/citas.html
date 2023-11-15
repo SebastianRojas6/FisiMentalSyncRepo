@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <!-- Titulo -->
+  <title>Citas - [alumno]</title>
+  <link rel="icon" href="../FISIMentalSync-FrontEnd-MPA/images/logoFisi.ico" />
+  <!-- Metadatos -->
+  <meta charset="utf-8">
+  <meta name="description" content="Citas - alumno" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <!-- CSS -->
+  <link rel="stylesheet" href="../css/App.css" />
+  <link rel="stylesheet" href="../css/barra-navegacion.css" />
+  <link rel="stylesheet" href="../css/citas.css" />
+  <!-- Fuentes -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <!-- Iconos -->
+  <script src="https://kit.fontawesome.com/9e15f108bc.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <div id="App">
+    <main class="citas">
+      <h1>Reserva tu cita</h1>
+
+      <section class="menu-cita">
+        <div class="select-group">
+          <label for="psicologos">Psicólogo</label>
+          <select id="psicologos" name="psicologos">
+            <option value="" disabled selected>Seleccione un psicólogo</option>
+            <option value="psicologo1">Psicólogo 1</option>
+            <option value="psicologo2">Psicólogo 2</option>
+          </select>
+        </div>
+
+        <div class="select-group">
+          <label for="motivo-cita">Motivo de la cita</label>
+          <select id="motivo-cita" name="motivoCita">
+            <option value="" disabled selected>Seleccione un motivo</option>
+            <option value="Falta de concentración">Falta de concentración</option>
+            <option value="Problemas de lenguaje">Problemas de lenguaje</option>
+            <option value="Estilos de aprendizaje">Estilos de aprendizaje</option>
+            <option value="Desmotivación por crisis vocacional">Desmotivación por crisis vocacional</option>
+            <option value="Problemas de conducta">Problemas de conducta</option>
+            <option value="Otro">Otro</option>
+          </select>
+        </div>
+
+        <div class="select-group">
+          <label for="fecha-cita">Seleccione una fecha:</label>
+          <input type="date" id="fecha-cita" name="fechaCita">
+        </div>
+        
+        <div class="select-group">
+          <label for="hora-cita">Seleccione una hora:</label>
+          <select id="hora-cita" name="horaCita">
+            <option value="" disabled selected>Seleccione un horario</option>
+            <option value="08:00">8:00 am  - 8:45 am</option>
+            <option value="09:00">9:00 am - 9:45 am</option>
+            <option value="10:00">10:00 am - 10:45 am</option>
+            <option value="11:00">11:00 am - 11:45 am</option>
+            <option value="14:00">2:00 am - 2:45 am</option>
+            <option value="15:00">3:00 am - 3:45 am</option>
+          </select>
+        </div>
+
+        <div class="select-group">
+          <label>Nivel de prioridad:</label>
+          <div>
+            <input type="radio" id="prioridad1" name="prioridad" value="1">
+            <label for="prioridad1">1</label>
+            <input type="radio" id="prioridad2" name="prioridad" value="2">
+            <label for="prioridad2">2</label>
+            <input type="radio" id="prioridad3" name="prioridad" value="3">
+            <label for="prioridad3">3</label>
+            <input type="radio" id="prioridad4" name="prioridad" value="4">
+            <label for="prioridad4">4</label>
+            <input type="radio" id="prioridad5" name="prioridad" value="5">
+            <label for="prioridad5">5</label>
+          </div>
+        <br>
+        <div class="contenido-boton">
+          <button class="boton-cita" type="submit">
+            Reservar
+          </button>
+        </div>
+      </section>
+    </main>
+  </div>
+  <script type="module" src="../js/App-alumno.js"></script>
+  <script language="JavaScript">
+    document.addEventListener("DOMContentLoaded", function() {
+      const perfilLi = document.querySelector('.contenedor-listas-nav li:nth-child(4)');
+      perfilLi.classList.add('activo');
+    });
+  </script>
+</body>
+
+</html>
